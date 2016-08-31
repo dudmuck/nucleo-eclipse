@@ -60,10 +60,10 @@ __IO uint8_t  ubTxComplete = 0;
 __IO uint8_t  ubRxComplete = 0;
 
 /* Buffer used for transmission */
-uint8_t aTxStartMessage[] = "\n\r ****UART-Hyperterminal communication based on IT (Mixed HAL/LL usage) ****\n\r Enter 10 characters using keyboard :\n\r";
+uint8_t aTxStartMessage[] = "\n\r ****UART-terminal communication based on IT (Mixed HAL/LL usage) ****\n\r Enter 10 characters using keyboard :\n\r";
 __IO uint32_t uwTxIndex = 0;
 uint8_t ubSizeToSend = sizeof(aTxStartMessage);
-uint8_t aTxEndMessage[] = "\n\r Example Finished\n\r";
+uint8_t aTxEndMessage[] = "\n\rExample Finished\n\r";
 
 /* Buffer used for reception */
 uint8_t aRxBuffer[RXBUFFERSIZE];
